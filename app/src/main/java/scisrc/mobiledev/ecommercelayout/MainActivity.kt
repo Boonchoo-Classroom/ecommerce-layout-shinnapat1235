@@ -48,6 +48,7 @@ class MainActivity : AppCompatActivity() {
                         .replace(R.id.fragment_container, HomeFragment())
                         .commit()
                 }
+
                 R.id.nav_cart -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragment_container, CartFragment())

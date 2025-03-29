@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import scisrc.mobiledev.ecommercelayout.databinding.FragmentCartBinding
 
+
 class CartFragment : Fragment() {
 
     private var _binding: FragmentCartBinding? = null
