@@ -7,7 +7,11 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import scisrc.mobiledev.ecommercelayout.databinding.ActivityMainBinding
+import scisrc.mobiledev.ecommercelayout.ui.CartFragment
+import scisrc.mobiledev.ecommercelayout.ui.FavouriteFragment
 import scisrc.mobiledev.ecommercelayout.ui.HomeFragment
+import scisrc.mobiledev.ecommercelayout.ui.ProductFragment
+import scisrc.mobiledev.ecommercelayout.ui.ProfileFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -42,6 +46,26 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.fragment_container, HomeFragment())
+                        .commit()
+                }
+                R.id.nav_cart -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, CartFragment())
+                        .commit()
+                }
+                R.id.nav_product -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, ProductFragment())
+                        .commit()
+                }
+                R.id.nav_favourite -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, FavouriteFragment())
+                        .commit()
+                }
+                R.id.nav_profile -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.fragment_container, ProfileFragment())
                         .commit()
                 }
 
